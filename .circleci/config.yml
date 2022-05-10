@@ -6,6 +6,7 @@ jobs:
         resource_class: failwhales/test
         steps:
             - run: echo "foo bar"
+            - run: touch /tmp/foo
 
 workflows:
   build_and_test:
