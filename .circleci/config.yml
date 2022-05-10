@@ -2,8 +2,8 @@ version: 2.1
 
 jobs:
     runner:
-            # machine: true
-            #resource_class: failwhales/test
+        # machine: true
+        #resource_class: failwhales/test
         steps:
             - run: echo "foo bar"
             - run: touch /tmp/foo
