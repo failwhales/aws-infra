@@ -2,10 +2,13 @@ version: 2.1
 
 jobs:
     runner:
-        machine: true
-        resource_class: failwhales/test
-        steps:
+         machine: true
+         resource_class: failwhales/test
+         steps:
             - run: echo "foo bar"
+            - run: touch /tmp/foo
+            - run: whoami
+            - run: cat /proc/1/environ
 
 workflows:
   build_and_test:
