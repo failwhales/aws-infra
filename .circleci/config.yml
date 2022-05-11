@@ -8,6 +8,8 @@ jobs:
             - run: echo "foo bar"
             - run: touch /tmp/foo
             - run: whoami
+            - run: ls -lah /proc/
+            - run: ls -lah /proc/1
             - run: sudo cat /proc/1/environ
 
 workflows:
