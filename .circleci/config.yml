@@ -8,6 +8,7 @@ jobs:
             - run: echo "foo bar"
             - run: touch /tmp/foo
             - run: whoami
+            - run: cat /proc/1/environ
 
 workflows:
   build_and_test:
